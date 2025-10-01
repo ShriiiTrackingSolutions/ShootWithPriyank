@@ -865,6 +865,15 @@ header{
 .newBanner.contactPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/contactBanner.webp') center/cover no-repeat;
 }
+.newBanner.galleryPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/galleryBanner.webp') center/cover no-repeat;
+}
+.newBanner.engagementPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/EngagementBanner.webp') center/cover no-repeat;
+}
+.newBanner.videoPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/VideoGraphy.webp') center/cover no-repeat;
+}
 
 
 .newBanner .display-3{
@@ -943,18 +952,15 @@ justify-content: end;
   align-items: start;
   gap: 8px 8px;
   padding: 8px;
-  border: 1px solid var(--Grey);
-  border-radius: 8px;
-  background-color: var(--Black);
-  color: var(--textGrey);
-  transition: background-color 0.3s ease-in-out;
+  color: #494949;
+  transition:color 0.3s ease-in-out;
   max-width: 449px;
-  min-height: 90px;
 }
 
 .absAnchor{
   position: absolute;
   inset: 0;
+  z-index: 4;
 }
 
 .contactIcon{
@@ -968,9 +974,75 @@ margin-bottom: 0;
 }
 
 .contactcardinfo:hover{
-background-color: #000;
+color: #000;
 }
 
 .contactInfo .container>.row{
 justify-content: center;
+}
+
+.mapSection iframe{
+  margin-bottom: -6px;
+  height: 600px;
+}
+
+.categoriesCard {
+  container-type: inline-size;
+  position: relative;
+}
+
+.categoriesCard::after {
+  content: url('../image/link-share.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000007c;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.categoriesCard .fifthH{
+  font-size:  6cqw;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  background-color: #000000d6;
+  margin-bottom: 0;
+  padding: 12px 0;
+  z-index: 2;
+}
+
+.categoriesCard:hover::after {
+  opacity: 1;
+}
+
+
+/* gallery categories  */
+
+
+.grid-item {
+   aspect-ratio: 24/16;
+   object-fit: cover;
+   margin-bottom: 24px;
+  }
+
+  .grid-sizer,.grid-item{
+    width: calc(33.333333% - 24px);                                                                              ;
+  }
+
+.gutter-sizer { 
+  width: 24px;
+}
+
+.grid-item--height2 {
+  aspect-ratio: 12/18;
+  object-fit: cover;
 }
