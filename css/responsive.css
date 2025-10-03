@@ -258,6 +258,10 @@ border-radius: 0 !important;
   .gutter-sizer { 
     width: 0;
   }
+
+.video-thumb .thumb-title {
+    font-size: 12px;
+}
 }
 
 @media only screen and (max-height: 539.98px) {

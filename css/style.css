@@ -874,6 +874,9 @@ header{
 .newBanner.videoPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/VideoGraphy.webp') center/cover no-repeat;
 }
+.newBanner.pricingPage0{
+  background: linear-gradient(#00000063, #00000063) 0 0 / cover, url('../image/PricingBanner.webp') center/cover no-repeat;
+}
 
 
 .newBanner .display-3{
@@ -1045,4 +1048,114 @@ justify-content: center;
 .grid-item--height2 {
   aspect-ratio: 12/18;
   object-fit: cover;
+}
+
+
+   .video-section-title {
+            color: #343a40;
+        }
+        .featured-video {
+            max-width: 900px; /* Controls the max size of the main player */
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        .featured-video iframe {
+            display: block; /* Removes bottom space under iframe */
+        }
+        .video-title {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .playlist {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 1rem;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        }
+        .playlist::-webkit-scrollbar {
+            height: 8px;
+        }
+        .playlist::-webkit-scrollbar-thumb {
+            background: #cccccc;
+            border-radius: 4px;
+        }
+        .video-thumb {
+            flex: 0 0 auto; /* Prevents thumbnails from shrinking */
+            width: 200px;
+            margin-right: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        .video-thumb:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .video-thumb .thumb-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            text-align: center;
+            white-space: normal; /* Allow title to wrap */
+            color: #495057;
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .video-thumb {
+                width: 160px;
+            }
+        }
+
+
+
+
+/* Base link style */
+
+.nav-tabs {
+    border-bottom: none;
+    row-gap: 8px;
+    justify-content: start !important;
+}
+
+.nav-tabs .nav-link {
+  color: #6c757d; /* default grey */
+  border: none;   /* remove default bootstrap borders */
+  background: transparent;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover state */
+.nav-tabs .nav-link:hover {
+  color: var(--Black);
+  border: none;
+}
+
+/* Active tab */
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid var(--Black); /* underline effect */
+  color: var(--Black) !important;
+  font-weight: 600;
+  background: transparent;
+}
+
+/* Optional background utilities if you want to reuse them */
+.bg-primary-light { background-color: rgba(24, 74, 191, 0.1); }
+.bg-dark-light { background-color: rgba(17, 22, 33, 0.5); }
+
+.card .badge {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  transform: translateY(-50%);
 }

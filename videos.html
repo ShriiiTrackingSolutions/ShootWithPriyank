@@ -56,6 +56,57 @@
 </section>
   <!-- banner start End-->
 
+<section class="videosList defaultPadding">
+  <div class="container">
+    <h2 class="secH mb-2 text-center">Moments in Motion</h2>
+    <p class="maxPara mb-5">A collection of our favorite stories, brought to life through film.</p>
+    <!-- Main Featured Video Player -->
+    <div id="video-player-section">
+        <!-- The parent div makes the iframe responsive -->
+<div class="featured-video ratio ratio-16x9">
+
+    <!-- Your cleaned-up iframe goes inside -->
+    <iframe id="featuredVideo" 
+            src="https://www.youtube.com/embed/UAH8y0aHubQ" 
+            title="Main Video Player" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+
+</div>
+        <h3 id="featuredVideoTitle" class="video-title thirdH">A Cinematic Wedding Story</h3>
+    </div>
+    <!-- Scrollable Video Playlist -->
+    <div class="playlist ">
+        <!-- Video 1 -->
+        <div class="video-thumb" onclick="changeVideo('UAH8y0aHubQ', 'A Cinematic Wedding Story')">
+            <img src="https://img.youtube.com/vi/UAH8y0aHubQ/mqdefault.jpg" alt="Thumbnail for A Cinematic Wedding Story" class="img-fluid">
+            <p class="thumb-title">A Cinematic Wedding Story</p>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-thumb" onclick="changeVideo('6BCA0uEfUw4', 'Engagement Adventure in the Mountains')">
+            <img src="https://img.youtube.com/vi/6BCA0uEfUw4/mqdefault.jpg" alt="Thumbnail for Engagement Adventure" class="img-fluid">
+            <p class="thumb-title">Engagement Adventure in the Mountains</p>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-thumb" onclick="changeVideo('m0FYJ3s67hg', 'Family Portraits: A Day at the Park')">
+            <img src="https://img.youtube.com/vi/m0FYJ3s67hg/mqdefault.jpg" alt="Thumbnail for Family Portraits" class="img-fluid">
+            <p class="thumb-title">Family Portraits: A Day at the Park</p>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-thumb" onclick="changeVideo('BOG_CbEDhag', 'Highlights from a Corporate Event')">
+            <img src="https://img.youtube.com/vi/BOG_CbEDhag/mqdefault.jpg" alt="Thumbnail for Corporate Event" class="img-fluid">
+            <p class="thumb-title">Highlights from a Corporate Event</p>
+        </div>
+        
+        <!-- Add more videos here -->
+
+    </div>
+  </div>
+</section>
 
 
 
@@ -73,6 +124,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to Handle Video Switching -->
+<script>
+    function changeVideo(videoId, title) {
+        const featuredVideo = document.getElementById('featuredVideo');
+        const featuredVideoTitle = document.getElementById('featuredVideoTitle');
+
+        featuredVideo.src = `https://www.youtube.com/embed/${videoId}?si=977tKr8NIuVQQIK_`; // Added autoplay
+        featuredVideoTitle.textContent = title;
+    }
+</script>
 
     <script defer src="js/script.js"></script>
   </body>
