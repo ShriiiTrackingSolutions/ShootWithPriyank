@@ -31,7 +31,7 @@
 .slide-content {
     position: absolute;
     top: unset;
-    bottom: 10%;
+    bottom: 14%;
     left: 0%;
     right: 0;
     transform: unset;
@@ -60,7 +60,6 @@
 }
 
 
-
 @media (max-width: 991.98px) {
 
 
@@ -69,11 +68,11 @@
   }
 
   .navLink {
-    color: var(--primary-color);
+    color: var(--lightGrey);
     padding: 12px 8px;
 }
 .navLink.active {
-  color: var(--black);
+  color: #ffffff;
 }
 .navMenu {
   gap: 4px;
@@ -234,6 +233,11 @@ border-radius: 0 !important;
 .seperator1{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/aboutSeperator.webp') top 0  right -700px/cover no-repeat;
 }
+
+.newBanner.videoPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/VideoGraphy.webp') top 0  left -300px/cover no-repeat;
+}
+
 .secSeperator{
   padding: 50px 0;
 }
