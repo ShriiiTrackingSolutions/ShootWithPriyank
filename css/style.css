@@ -871,6 +871,12 @@ header{
 .newBanner.engagementPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/EngagementBanner.webp') center/cover no-repeat;
 }
+.newBanner.maternityPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/MaternityBanner.webp') center/cover no-repeat;
+}
+.newBanner.babyShowerPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/BabyShowerBanner.webp') center/cover no-repeat;
+}
 .newBanner.videoPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/VideoGraphy.webp') center/cover no-repeat;
 }
@@ -1032,7 +1038,7 @@ justify-content: center;
 
 
 .grid-item {
-   aspect-ratio: 24/16;
+   aspect-ratio: 3/2;
    object-fit: cover;
    margin-bottom: 24px;
   }
@@ -1046,7 +1052,7 @@ justify-content: center;
 }
 
 .grid-item--height2 {
-  aspect-ratio: 12/18;
+  aspect-ratio: 2/3;
   object-fit: cover;
 }
 
