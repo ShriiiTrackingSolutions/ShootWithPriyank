@@ -877,6 +877,9 @@ header{
 .newBanner.babyShowerPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/BabyShowerBanner.webp') center/cover no-repeat;
 }
+.newBanner.weddingPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/WeddingBanner.webp') center/cover no-repeat;
+}
 .newBanner.videoPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/VideoGraphy.webp') center/cover no-repeat;
 }
