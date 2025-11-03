@@ -103,19 +103,19 @@ Main Road, Vadodara,391410</pre>
                   </a>
                 </li>
                 <li>
-                  <a href="tel:Number" class="footerLinks">
-                    <span class="iconify" data-icon="line-md:phone-twotone" data-inline="false"></span>+91 63547 10794 </a>
+                  <a href="tel:+61470429795" class="footerLinks">
+                    <span class="iconify" data-icon="line-md:phone-twotone" data-inline="false"></span> +61 470 429 795</a>
                 </li>
                 <li>
-                  <a class="emailAnchor footerLinks" href="mailto:youremail">
-                    <span class="iconify" data-icon="ic:twotone-email" data-inline="false"></span>youremail </a>
+                  <a class="emailAnchor footerLinks" href="mailto:Priyanktandel7699@gmail.com">
+                    <span class="iconify" data-icon="ic:twotone-email" data-inline="false"></span>Priyanktandel7699@gmail.com </a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
                 <a target="_blank" class="facebook" href="https://www.linkedin.com/">
                   <span class="iconify" data-icon="ri:linkedin-fill" data-inline="false"></span>
                 </a>
-                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=61470429795">
                   <span class="iconify" data-icon="fontisto:whatsapp" data-inline="false"></span>
                 </a>
               </div>
@@ -142,7 +142,7 @@ Main Road, Vadodara,391410</pre>
 
     document.getElementById("fabContainer").innerHTML = `<!-- whatsapp FAB icon -->
     <div class="fab-container">
-      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=61470429795">
         <svg xmlns="http://www.w3.org/2000/svg" width="59.54px" height="60px" viewBox="0 0 256 258">
           <defs>
             <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
@@ -162,7 +162,7 @@ Main Road, Vadodara,391410</pre>
     </div>
     <!-- Call FAB icon -->
     <div class="Call-fab-container">
-      <a rel="noopener" target="_blank" href="tel:number">
+      <a rel="noopener" target="_blank" href="tel:+61470429795">
         <img style="height: 60px; width: 60px" src="image/phone-call.png" alt="phone icon" />
       </a>
     </div>`// Keep your current Fab HTML here
@@ -232,8 +232,8 @@ function initMobileNavToggle() {
 
 // WhatsApp URL Adjuster (Device-based Detection)
 (function () {
-  const mobileLink = "https://api.whatsapp.com/send?phone=916354710794";
-  const desktopLink = "https://web.whatsapp.com/send?phone=916354710794";
+  const mobileLink = "https://api.whatsapp.com/send?phone=61470429795";
+  const desktopLink = "https://web.whatsapp.com/send?phone=61470429795";
 
   function isMobileDevice() {
     return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
