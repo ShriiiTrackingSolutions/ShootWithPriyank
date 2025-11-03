@@ -880,6 +880,12 @@ header{
 .newBanner.weddingPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/WeddingBanner.webp') center/cover no-repeat;
 }
+.newBanner.proposePage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/ProposeBanner.webp') center/cover no-repeat;
+}
+.newBanner.DJ_EventPage0{
+  background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/DJ_EventBanner.webp') center/cover no-repeat;
+}
 .newBanner.videoPage0{
   background: linear-gradient(#000000a4, #000000a4) 0 0 / cover, url('../image/VideoGraphy.webp') center/cover no-repeat;
 }

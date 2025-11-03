@@ -68,53 +68,24 @@ function loadHeaderFooter(callback) {
                     <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Home </a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="about.html">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>About Us </a>
+                  <a class="footerLinks" href="aboutUs.html">
+                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>About Me </a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="activities.html">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Activities </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="tripsAndCamps.html">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Trips And Camps</a>
+                  <a class="footerLinks" href="pricing.html">
+                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Pricing</a>
                 </li>
                 <li>
                   <a class="footerLinks" href="gallery.html">
                     <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Gallery </a>
                 </li>
                 <li>
+                  <a class="footerLinks" href="videos.html">
+                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Videos </a>
+                </li>
+                <li>
                   <a class="footerLinks" href="contactUs.html">
                     <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span>Contact </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
-              <h5 class="fourthH ">Explore Link</h5>
-              <ul>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <span class="iconify" data-icon="si:arrow-right-circle-duotone" data-inline="false"></span> link HERE </a>
                 </li>
               </ul>
             </div>
