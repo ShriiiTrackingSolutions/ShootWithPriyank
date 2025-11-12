@@ -93,13 +93,11 @@ function loadHeaderFooter(callback) {
               <h5 class="fourthH ">Contact Us</h5>
               <ul class="contact-info">
                 <li>
-                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8">
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/SDH7w7s9JjaSsz157">
                     
                     <span class="iconify" data-icon="ic:twotone-location-on" data-inline="false"></span>
                     <pre class="mb-0">
-TF-A1-22, Akshar Pavilion Mall,
-Near Priya Cinema,Vasna Bhyali
-Main Road, Vadodara,391410</pre>
+Adelaide, Australia</pre>
                   </a>
                 </li>
                 <li>

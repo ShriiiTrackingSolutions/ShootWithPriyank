@@ -93,6 +93,10 @@
   .defaultPadding {
     padding: 50px 0;
   }
+
+  .aboutMe.PricingPage0{
+  padding: 50px 0;
+}
   .footer.defaultPadding {
     padding: 34px 0;
   }

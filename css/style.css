@@ -903,6 +903,28 @@ margin-bottom: 0;
   padding: 40px 0 0;
 }
 
+.aboutMe.PricingPage0{
+  padding: 100px 0;
+}
+
+
+.btnFillLight {
+  display: inline-block;
+  background: var(--offwhite);
+  color: var(--Black);
+  padding: 12px 24px;
+  border-radius: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 16px;
+}
+
+.btnFillLight:hover {
+  background: #fff;
+  color: var(--Black);
+}
+
 .aboutMeImg{
   aspect-ratio: 6/5;
 }
