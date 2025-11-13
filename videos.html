@@ -61,48 +61,60 @@
   <div class="container">
     <h2 class="secH mb-2 text-center">Moments in Motion</h2>
     <p class="maxPara mb-5">A collection of our favorite stories, brought to life through film.</p>
+    
     <!-- Main Featured Video Player -->
     <div id="video-player-section">
-        <!-- The parent div makes the iframe responsive -->
         <div class="featured-video ratio ratio-16x9">
-            <!-- Your cleaned-up iframe goes inside -->
-            <iframe id="featuredVideo" 
-                    src="https://www.youtube.com/embed/kvF2_9H7m04" 
-                    title="Main Video Player" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
+            <video id="featuredVideo" 
+                   class="w-100" 
+                   controls 
+                   controlsList="nodownload"
+                   preload="metadata">
+                <source src="https://res.cloudinary.com/dtexvd694/video/upload/v1763005112/Screen_Recording_2025-10-28_155437_knfbu1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <h3 id="featuredVideoTitle" class="video-title thirdH">Rinku & Hiren Baby Shower Celebration</h3>
     </div>
+    
     <!-- Scrollable Video Playlist -->
     <div class="playlist">
-        <!-- Video 1 - Baby Shower -->
-        <div class="video-thumb" onclick="changeVideo('kvF2_9H7m04', 'Rinku & Hiren Baby Shower Celebration')">
-            <img loading="lazy" src="https://img.youtube.com/vi/kvF2_9H7m04/mqdefault.jpg" alt="Thumbnail for Rinku & Hiren Baby Shower Celebration" class="img-fluid">
-            <p class="thumb-title">Rinku & Hiren Baby Shower Celebration</p>
-        </div>
-        
-        <!-- Video 2 - Garba Event -->
-        <div class="video-thumb" onclick="changeVideo('Vw6wzUzgSFU', 'Traditional Garba Night Celebration')">
-            <img loading="lazy" src="https://img.youtube.com/vi/Vw6wzUzgSFU/mqdefault.jpg" alt="Thumbnail for Traditional Garba Night" class="img-fluid">
-            <p class="thumb-title">Traditional Garba Night Celebration</p>
-        </div>
-
-        <!-- Video 3 - Proposal -->
-        <div class="video-thumb" onclick="changeVideo('3MO_CHFvezc', 'A Romantic Proposal Story')">
-            <img loading="lazy" src="https://img.youtube.com/vi/3MO_CHFvezc/mqdefault.jpg" alt="Thumbnail for A Romantic Proposal" class="img-fluid">
-            <p class="thumb-title">A Romantic Proposal Story</p>
-        </div>
-
-        <!-- Video 4 - Wedding -->
-        <div class="video-thumb" onclick="changeVideo('zoPveWSRVm4', 'A Cinematic Wedding Journey')">
-            <img loading="lazy" src="https://img.youtube.com/vi/zoPveWSRVm4/mqdefault.jpg" alt="Thumbnail for A Cinematic Wedding" class="img-fluid">
-            <p class="thumb-title">A Cinematic Wedding Journey</p>
-        </div>
-        
-        <!-- Add more videos here -->
+    <!-- Video 1 - Baby Shower -->
+    <div class="video-thumb" 
+         data-video-url="https://res.cloudinary.com/dticzwbrv/video/upload/v1763006999/Rinku_Hiren_Baby_Shower_orsswh.mp4"
+         data-video-title="Rinku & Hiren Baby Shower Celebration"
+         onclick="changeVideo(this)">
+        <img loading="lazy" src="https://img.youtube.com/vi/kvF2_9H7m04/mqdefault.jpg" alt="Thumbnail for Rinku & Hiren Baby Shower Celebration" class="img-fluid">
+        <p class="thumb-title">Rinku & Hiren Baby Shower Celebration</p>
     </div>
+    
+    <!-- Video 2 - Garba Event -->
+    <div class="video-thumb" 
+         data-video-url="https://res.cloudinary.com/dticzwbrv/video/upload/v1763006752/Aditya_Gadhvi_Final_Garba_event_dzrpfr.mp4"
+         data-video-title="Traditional Garba Night Celebration"
+         onclick="changeVideo(this)">
+        <img loading="lazy" src="https://img.youtube.com/vi/Vw6wzUzgSFU/mqdefault.jpg" alt="Thumbnail for Traditional Garba Night" class="img-fluid">
+        <p class="thumb-title">Traditional Garba Night Celebration</p>
+    </div>
+
+    <!-- Video 3 - Proposal -->
+    <div class="video-thumb" 
+         data-video-url="https://res.cloudinary.com/dticzwbrv/video/upload/v1763006600/propose_Video_n1mz7q.mp4"
+         data-video-title="A Romantic Proposal Story"
+         onclick="changeVideo(this)">
+        <img loading="lazy" src="https://img.youtube.com/vi/3MO_CHFvezc/mqdefault.jpg" alt="Thumbnail for A Romantic Proposal" class="img-fluid">
+        <p class="thumb-title">A Romantic Proposal Story</p>
+    </div>
+
+    <!-- Video 4 - Wedding -->
+    <div class="video-thumb" 
+         data-video-url="https://res.cloudinary.com/dticzwbrv/video/upload/v1763006653/Shivani_JApam_Teaser_im2csh.mp4"
+         data-video-title="A Cinematic Wedding Journey"
+         onclick="changeVideo(this)">
+        <img loading="lazy" src="https://img.youtube.com/vi/zoPveWSRVm4/mqdefault.jpg" alt="Thumbnail for A Cinematic Wedding" class="img-fluid">
+        <p class="thumb-title">A Cinematic Wedding Journey</p>
+    </div>
+</div>
   </div>
 </section>
 
@@ -125,12 +137,37 @@
 
 <!-- JavaScript to Handle Video Switching -->
 <script>
-    function changeVideo(videoId, title) {
+  function changeVideo(element) {
         const featuredVideo = document.getElementById('featuredVideo');
         const featuredVideoTitle = document.getElementById('featuredVideoTitle');
-
-        featuredVideo.src = `https://www.youtube.com/embed/${videoId}?si=977tKr8NIuVQQIK_`; // Added autoplay
+        const videoSource = featuredVideo.querySelector('source');
+        
+        // Get URL and title from data attributes
+        const cloudinaryUrl = element.dataset.videoUrl;
+        const title = element.dataset.videoTitle;
+        
+        // Pause current video
+        featuredVideo.pause();
+        
+        // Update video source
+        videoSource.src = cloudinaryUrl;
+        
+        // Update title
         featuredVideoTitle.textContent = title;
+        
+        // Load and play new video
+        featuredVideo.load();
+        featuredVideo.play();
+        
+        // Scroll with 140px offset
+        const videoSection = document.getElementById('video-player-section');
+        const elementPosition = videoSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 100;
+        
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     }
 </script>
 
